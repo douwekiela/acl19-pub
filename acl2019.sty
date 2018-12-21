@@ -108,6 +108,8 @@
   % It provides a backup, no-op definiton of \href.
   % This is necessary because \href command is used in the acl_natbib.bst file.
   \def\href#1#2{{#2}}
+  % We still need to load xcolor in this case because the lighter line numbers require it. (SC/KG/WL) 
+  \usepackage{xcolor}
 \fi
 
 \typeout{Conference Style for ACL 2019}
