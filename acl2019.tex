@@ -48,7 +48,7 @@
 \maketitle
 \begin{abstract}
   This document contains the instructions for preparing a camera-ready
-  manuscript for the proceedings of NAACL-HLT 2019. The document itself
+  manuscript for the proceedings of ACL 2019. The document itself
   conforms to its own specifications, and is therefore an example of
   what your manuscript should look like. These instructions should be
   used for both papers submitted for review and for final versions of
@@ -61,7 +61,9 @@
 This document has been adapted from the instructions
 for earlier ACL and NAACL proceedings,
 including 
-those for ACL 2018 by Shay Cohen, Kevin Gimpel, and Wei Lu, 
+those for 
+NAACL 2019 by Stephanie Lukin and Alla Roskovskaya, 
+ACL 2018 by Shay Cohen, Kevin Gimpel, and Wei Lu, 
 NAACL 2018 by Margaret Michell and Stephanie Lukin,
 2017/2018 (NA)ACL bibtex suggestions from Jason Eisner,
 ACL 2017 by Dan Gildea and Min-Yen Kan, 
@@ -82,7 +84,7 @@ instructions of the {\em International Joint Conference on Artificial
 \section{Introduction}
 
 The following instructions are directed to authors of papers submitted
-to NAACL-HLT 2019 or accepted for publication in its proceedings. All
+to ACL 2019 or accepted for publication in its proceedings. All
 authors are required to adhere to these specifications. Authors are
 required to provide a Portable Document Format (PDF) version of their
 papers. \textbf{The proceedings are designed for printing on A4
@@ -105,12 +107,10 @@ By uncommenting {\small\verb|\aclfinalcopy|} at the top of this
  document, it will compile to produce an example of the camera-ready formatting; by leaving it commented out, the document will be anonymized for initial submission.  When you first create your submission on softconf, please fill in your submitted paper ID where {\small\verb|***|} appears in the {\small\verb|\def\aclpaperid{***}|} definition at the top.
 
 The review process is double-blind, so do not include any author information (names, addresses) when submitting a paper for review.  
-However, you should maintain space for names and addresses so that they will fit in the final (accepted) version.  The NAACL-HLT 2019 \LaTeX\ style will create a titlebox space of 2.5in for you when {\small\verb|\aclfinalcopy|} is commented out.  
-
-The author list for submissions should include all (and only) individuals who made substantial contributions to the work presented. Each author listed on a submission to NAACL-HLT 2019 will be notified of submissions, revisions and the final decision. No authors may be added to or removed from submissions to NAACL-HLT 2019 after the submission deadline.
+However, you should maintain space for names and addresses so that they will fit in the final (accepted) version.  The ACL 2019 \LaTeX\ style will create a titlebox space of 2.5in for you when {\small\verb|\aclfinalcopy|} is commented out.  
 
 \subsection{The Ruler}
-The NAACL-HLT 2019 style defines a printed ruler which should be presented in the
+The ACL 2019 style defines a printed ruler which should be presented in the
 version submitted for review.  The ruler is provided in order that
 reviewers may comment on particular lines in the paper without
 circumlocution.  If you are preparing a document without the provided
@@ -128,7 +128,7 @@ references ({\em e.g.}, the first paragraph on this page ends at mark $108.5$).
 
 \subsection{Electronically-available resources}
 
-NAACL-HLT provides this description in \LaTeX2e{} ({\small\tt acl2019.tex}) and PDF
+ACL-HLT provides this description in \LaTeX2e{} ({\small\tt acl2019.tex}) and PDF
 format ({\small\tt acl2019.pdf}), along with the \LaTeX2e{} style file used to
 format it ({\small\tt acl2019.sty}) and an ACL bibliography style ({\small\tt acl\_natbib.bst})
 and example bibliography ({\small\tt acl2019.bib}).
@@ -219,6 +219,7 @@ author names & 12 pt & bold \\
 author affiliation & 12 pt & \\
 the word ``Abstract'' & 12 pt & bold \\
 section titles & 12 pt & bold \\
+subsection titles & 11 pt & bold \\
 document text & 11 pt  &\\
 captions & 10 pt & \\
 abstract text & 10 pt & \\
@@ -355,6 +356,10 @@ If you are using the provided \LaTeX{} and Bib\TeX{} style files, you
 can use the command \verb|\citet| (cite in text)
 to get ``author (year)'' citations.
 
+You can use the command \verb|\citealp| (alternative cite without 
+parentheses) to get ``author year'' citations (which is useful for 
+using citations within parentheses, as in \citealp{Gusfield:97}).
+
 If the Bib\TeX{} file contains DOI fields, the paper
 title in the references section will appear as a hyperlink
 to the DOI, using the hyperref \LaTeX{} package.
@@ -392,7 +397,7 @@ should be avoided. Instead, use citations such as
 previously showed ... ''
 \end{quote}
 
-Any preliminary non-archival versions of submitted papers should be listed in the submission form but not in the review version of the paper. NAACL-HLT 2019 reviewers are generally aware that authors may present preliminary versions of their work in other venues, but will not be provided the list of previous presentations from the submission form. 
+Any preliminary non-archival versions of submitted papers should be listed in the submission form but not in the review version of the paper. ACL 2019 reviewers are generally aware that authors may present preliminary versions of their work in other venues, but will not be provided the list of previous presentations from the submission form. 
 
 
 \textbf{Please do not use anonymous citations} and do not include
