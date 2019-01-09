@@ -367,6 +367,14 @@ To disable the hyperref package, load the style file
 with the \verb|nohyperref| option: \\{\small
 \verb|\usepackage[nohyperref]{acl2019}|}
 
+\textbf{Compilation Issues}: Some of you might encounter the following error during compilation: 
+
+``{\em \verb|\pdfendlink| ended up in different nesting level than \verb|\pdfstartlink|.}''
+
+This happens when \verb|pdflatex| is used and a citation splits across a page boundary. To fix this, the style file contains a patch consisting of the following two lines: (1) \verb|\RequirePackage{etoolbox}| (line 454 in \texttt{acl2019.sty}), and (2) A long line below (line 455 in \texttt{acl2019.sty}).
+
+If you still encounter compilation issues even with the patch enabled, disable the patch by commenting the two lines, and then disable the \verb|hyperref| package (see above), recompile and see the problematic citation.
+Next rewrite that sentence containing the citation. (See, {\em e.g.}, {\small\tt http://tug.org/errors.html})
 
 \textbf{Digital Object Identifiers}:  As part of our work to make ACL
 materials more widely used and cited outside of our discipline, ACL
