@@ -27,7 +27,7 @@
 % smaller than 5cm (the original size); we will check this
 % in the camera-ready version and ask you to change it back.
 
-\newcommand\BibTeX{B{\sc ib}\TeX}
+\newcommand\BibTeX{B\textsc{ib}\TeX}
 
 \title{Instructions for ACL 2019 Proceedings}
 
@@ -35,12 +35,12 @@
   Affiliation / Address line 1 \\
   Affiliation / Address line 2 \\
   Affiliation / Address line 3 \\
-  {\tt email@domain} \\\And
+  \texttt{email@domain} \\\And
   Second Author \\
   Affiliation / Address line 1 \\
   Affiliation / Address line 2 \\
   Affiliation / Address line 3 \\
-  {\tt email@domain} \\}
+  \texttt{email@domain} \\}
 
 \date{}
 
@@ -77,7 +77,7 @@ and earlier ACL and EACL formats.
 Those versions were written by several
 people, including John Chen, Henry S. Thompson and Donald
 Walker. Additional elements were taken from the formatting
-instructions of the {\em International Joint Conference on Artificial
+instructions of the \emph{International Joint Conference on Artificial
   Intelligence} and the \emph{Conference on Computer Vision and
   Pattern Recognition}.
 
@@ -96,12 +96,12 @@ Manuscripts must be in two-column format.  Exceptions to the
 two-column format include the title, authors' names and complete
 addresses, which must be centered at the top of the first page, and
 any full-width figures or tables (see the guidelines in
-Subsection~\ref{ssec:first}). {\bf Type single-spaced.}  Start all
+Subsection~\ref{ssec:first}). \textbf{Type single-spaced.}  Start all
 pages directly under the top margin. See the guidelines later
 regarding formatting the first page.  The manuscript should be
 printed single-sided and its length
 should not exceed the maximum page limit described in Section~\ref{sec:length}.
-Pages are numbered for  initial submission. However, {\bf do not number the pages in the camera-ready version}.
+Pages are numbered for  initial submission. However, \textbf{do not number the pages in the camera-ready version}.
 
 By uncommenting {\small\verb|\aclfinalcopy|} at the top of this 
  document, it will compile to produce an example of the camera-ready formatting; by leaving it commented out, the document will be anonymized for initial submission.  When you first create your submission on softconf, please fill in your submitted paper ID where {\small\verb|***|} appears in the {\small\verb|\def\aclpaperid{***}|} definition at the top.
@@ -124,16 +124,16 @@ lines in the paper -- this turns out to be very difficult to do well
 when the paper contains many figures and equations, and, when done,
 looks ugly. In most cases one would expect that the approximate
 location will be adequate, although you can also use fractional
-references ({\em e.g.}, the first paragraph on this page ends at mark $108.5$).
+references (\emph{e.g.}, the first paragraph on this page ends at mark $108.5$).
 
 \subsection{Electronically-available resources}
 
-ACL provides this description in \LaTeX2e{} ({\small\tt acl2019.tex}) and PDF
-format ({\small\tt acl2019.pdf}), along with the \LaTeX2e{} style file used to
-format it ({\small\tt acl2019.sty}) and an ACL bibliography style ({\small\tt acl\_natbib.bst})
-and example bibliography ({\small\tt acl2019.bib}).
+ACL provides this description in \LaTeX2e{} (\texttt{\small acl2019.tex}) and PDF
+format (\texttt{\small acl2019.pdf}), along with the \LaTeX2e{} style file used to
+format it (\texttt{\small acl2019.sty}) and an ACL bibliography style (\texttt{\small acl\_natbib.bst})
+and example bibliography (\texttt{\small acl2019.bib}).
 These files are all available at
-{\small\tt http://acl2019.org/downloads/ acl2019-latex.zip}. 
+\texttt{\small http://acl2019.org/downloads/ acl2019-latex.zip}. 
  We
 strongly recommend the use of these style files, which have been
 appropriately tailored for the ACL 2019 proceedings.
@@ -164,10 +164,10 @@ file'', then convert the file to PDF.
 
 It is of utmost importance to specify the \textbf{A4 format} (21 cm
 x 29.7 cm) when formatting the paper. When working with
-{\tt dvips}, for instance, one should specify {\tt -t a4}.
+\texttt{dvips}, for instance, one should specify \texttt{-t a4}.
 Or using the command \verb|\special{papersize=210mm,297mm}| in the latex
 preamble (directly below the \verb|\usepackage| commands). Then using 
-{\tt dvipdf} and/or {\tt pdflatex} which would make it easier for some.
+\texttt{dvipdf} and/or \texttt{pdflatex} which would make it easier for some.
 
 Print-outs of the PDF file on A4 paper should be identical to the
 hardcopy version. If you cannot meet the above requirements about the
@@ -197,7 +197,7 @@ paper are:
 
 \subsection{Fonts}
 
-For reasons of uniformity, Adobe's {\bf Times Roman} font should be
+For reasons of uniformity, Adobe's \textbf{Times Roman} font should be
 used. In \LaTeX2e{} this is accomplished by putting
 
 \begin{quote}
@@ -206,14 +206,14 @@ used. In \LaTeX2e{} this is accomplished by putting
 \usepackage{latexsym}
 \end{verbatim}
 \end{quote}
-in the preamble. If Times Roman is unavailable, use {\bf Computer
+in the preamble. If Times Roman is unavailable, use \textbf{Computer
   Modern Roman} (\LaTeX2e{}'s default).  Note that the latter is about
   10\% less dense than Adobe's Times Roman font.
 
 \begin{table}[t!]
 \begin{center}
 \begin{tabular}{|l|rl|}
-\hline \bf Type of Text & \bf Font Size & \bf Style \\ \hline
+\hline \textbf{Type of Text} & \textbf{Font Size} & \textbf{Style} \\ \hline
 paper title & 15 pt & bold \\
 author names & 12 pt & bold \\
 author affiliation & 12 pt & \\
@@ -239,14 +239,14 @@ columns. Do not use footnotes for affiliations. Do not include the
 paper ID number assigned during the submission process. Use the
 two-column format only when you begin the abstract.
 
-{\bf Title}: Place the title centered at the top of the first page, in
+\textbf{Title}: Place the title centered at the top of the first page, in
 a 15-point bold font. (For a complete guide to font sizes and styles,
 see Table~\ref{font-table}) Long titles should be typed on two lines
 without a blank line intervening. Approximately, put the title at 2.5
 cm from the top of the page, followed by a blank line, then the
 author's names(s), and the affiliation on the following line. Do not
 use only initials for given names (middle initials are allowed). Do
-not format surnames in all capitals ({\em e.g.}, use ``Mitchell'' not
+not format surnames in all capitals (\emph{e.g.}, use ``Mitchell'' not
 ``MITCHELL'').  Do not format title and section headings in all
 capitals as well except for proper names (such as ``BLEU'') that are
 conventionally in all capitals.  The affiliation should contain the
@@ -262,18 +262,18 @@ chairs may resolve the difference without consulting with you; so it
 is in your own interest to double-check that the information is
 consistent.
 
-{\bf Abstract}: Type the abstract at the beginning of the first
+\textbf{Abstract}: Type the abstract at the beginning of the first
 column. The width of the abstract text should be smaller than the
 width of the columns for the text in the body of the paper by about
-0.6 cm on each side. Center the word {\bf Abstract} in a 12 point bold
+0.6 cm on each side. Center the word \textbf{Abstract} in a 12 point bold
 font above the body of the abstract. The abstract should be a concise
 summary of the general thesis and conclusions of the paper. It should
 be no longer than 200 words. The abstract text should be in 10 point font.
 
-{\bf Text}: Begin typing the main body of the text immediately after
+\textbf{Text}: Begin typing the main body of the text immediately after
 the abstract, observing the two-column format as shown in the present document. Do not include page numbers.
 
-{\bf Indent}: Indent when starting a new paragraph, about 0.4 cm. Use 11 points for text and subsection headings, 12 points for section headings and 15 points for the title. 
+\textbf{Indent}: Indent when starting a new paragraph, about 0.4 cm. Use 11 points for text and subsection headings, 12 points for section headings and 15 points for the title. 
 
 
 \begin{table}
@@ -282,7 +282,7 @@ the abstract, observing the two-column format as shown in the present document. 
 \begin{tabular}{cc}
 \begin{tabular}{|l|l|}
 \hline
-{\bf Command} & {\bf Output}\\\hline
+\textbf{Command} & \textbf{Output}\\\hline
 \verb|{\"a}| & {\"a} \\
 \verb|{\^e}| & {\^e} \\
 \verb|{\`i}| & {\`i} \\ 
@@ -293,7 +293,7 @@ the abstract, observing the two-column format as shown in the present document. 
 \end{tabular} & 
 \begin{tabular}{|l|l|}
 \hline
-{\bf Command} & {\bf  Output}\\\hline
+\textbf{Command} & \textbf{Output}\\\hline
 \verb|{\c c}| & {\c c} \\ 
 \verb|{\u g}| & {\u g} \\ 
 \verb|{\l}| & {\l} \\ 
@@ -303,12 +303,12 @@ the abstract, observing the two-column format as shown in the present document. 
 \verb|{\ss}| & {\ss} \\\hline
 \end{tabular}
 \end{tabular}
-\caption{Example commands for accented characters, to be used in, {\em e.g.}, \BibTeX\ names.}\label{tab:accents}
+\caption{Example commands for accented characters, to be used in, \emph{e.g.}, \BibTeX\ names.}\label{tab:accents}
 \end{table}
 
 \subsection{Sections}
 
-{\bf Headings}: Type and label section and subsection headings in the
+\textbf{Headings}: Type and label section and subsection headings in the
 style shown on the present document.  Use numbered sections (Arabic
 numerals) in order to facilitate cross references. Number subsections
 with the section number and the subsection number separated by a dot,
@@ -332,11 +332,11 @@ Do not number subsubsections.
   }
 \end{table*}
 
-{\bf Citations}: Citations within the text appear in parentheses
+\textbf{Citations}: Citations within the text appear in parentheses
 as~\cite{Gusfield:97} or, if the author's name appears in the text
 itself, as Gusfield~\shortcite{Gusfield:97}.
 Using the provided \LaTeX\ style, the former is accomplished using
-{\small\verb|\cite|} and the latter with {\small\verb|\shortcite|} or {\small\verb|\newcite|}. Collapse multiple citations as in~\cite{Gusfield:97,Aho:72}; this is accomplished with the provided style using commas within the {\small\verb|\cite|} command, {\em e.g.}, {\small\verb|\cite{Gusfield:97,Aho:72}|}. Append lowercase letters to the year in cases of ambiguities.  
+{\small\verb|\cite|} and the latter with {\small\verb|\shortcite|} or {\small\verb|\newcite|}. Collapse multiple citations as in~\cite{Gusfield:97,Aho:72}; this is accomplished with the provided style using commas within the {\small\verb|\cite|} command, \emph{e.g.}, {\small\verb|\cite{Gusfield:97,Aho:72}|}. Append lowercase letters to the year in cases of ambiguities.  
  Treat double authors as
 in~\cite{Aho:72}, but write as in~\cite{Chandra:81} when more than two
 authors are involved. Collapse multiple citations as
@@ -387,7 +387,7 @@ in the bibliography.
 
 As reviewing will be double-blind, the submitted version of the papers
 should not include the authors' names and affiliations. Furthermore,
-self-references that reveal the author's identity, {\em e.g.},
+self-references that reveal the author's identity, \emph{e.g.},
 \begin{quote}
 ``We previously showed \cite{Gusfield:97} ...''  
 \end{quote}
@@ -405,19 +405,19 @@ Any preliminary non-archival versions of submitted papers should be listed in th
 conform to these requirements may be rejected without review.
 
 \textbf{References}: Gather the full set of references together under
-the heading {\bf References}; place the section before any Appendices. 
+the heading \textbf{References}; place the section before any Appendices. 
 Arrange the references alphabetically
 by first author, rather than by order of occurrence in the text.
 By using a .bib file, as in this template, this will be automatically 
 handled for you. See the \verb|\bibliography| commands near the end for more.
 
 Provide as complete a citation as possible, using a consistent format,
-such as the one for {\em Computational Linguistics\/} or the one in the 
-{\em Publication Manual of the American 
+such as the one for \emph{Computational Linguistics\/} or the one in the 
+\emph{Publication Manual of the American 
 Psychological Association\/}~\cite{APA:83}. Use of full names for
 authors rather than initials is preferred. A list of abbreviations
 for common computer science journals can be found in the ACM 
-{\em Computing Reviews\/}~\cite{ACM:83}.
+\emph{Computing Reviews\/}~\cite{ACM:83}.
 
 The \LaTeX{} and Bib\TeX{} style files provided roughly fit the
 American Psychological Association format, allowing regular citations, 
@@ -433,13 +433,13 @@ See corresponding .bib file for further details.
 
 Submissions should accurately reference prior and related work, including code and data. If a piece of prior work appeared in multiple venues, the version that appeared in a refereed, archival venue should be referenced. If multiple versions of a piece of prior work exist, the one used by the authors should be referenced. Authors should not rely on automated citation indices to provide accurate references for prior and related work.
 
-{\bf Appendices}: Appendices, if any, directly follow the text and the
+\textbf{Appendices}: Appendices, if any, directly follow the text and the
 references (but see above).  Letter them in sequence and provide an
-informative title: {\bf Appendix A. Title of Appendix}.
+informative title: \textbf{Appendix A. Title of Appendix}.
 
 \subsection{Footnotes}
 
-{\bf Footnotes}: Put footnotes at the bottom of the page and use 9
+\textbf{Footnotes}: Put footnotes at the bottom of the page and use 9
 point font. They may be numbered or referred to by asterisks or other
 symbols.\footnote{This is how a footnote should appear.} Footnotes
 should be separated from the text by a line.\footnote{Note the line
@@ -447,13 +447,13 @@ separating the footnotes from the text.}
 
 \subsection{Graphics}
 
-{\bf Illustrations}: Place figures, tables, and photographs in the
+\textbf{Illustrations}: Place figures, tables, and photographs in the
 paper near where they are first discussed, rather than at the end, if
 possible.  Wide illustrations may run across both columns.  Color
 illustrations are discouraged, unless you have verified that  
 they will be understandable when printed in black ink.
 
-{\bf Captions}: Provide a caption for every illustration; number each one
+\textbf{Captions}: Provide a caption for every illustration; number each one
 sequentially in the form:  ``Figure 1. Caption of the Figure.'' ``Table 1.
 Caption of the Table.''  Type the captions of the figures and 
 tables below the body, using 10 point text. Captions should be placed below illustrations. Captions that are one line are centered (see Table~\ref{font-table}). Captions longer than one line are left-aligned (see Table~\ref{tab:accents}). Do not overwrite the default caption sizes. The acl2019.sty file is compatible with the caption and subcaption packages; do not add optional arguments.
@@ -529,7 +529,7 @@ The acknowledgments should go immediately before the references.  Do
 not number the acknowledgments section. Do not include this section
 when submitting your paper for review. \\
 
-\noindent {\bf Preparing References:} \\
+\noindent \textbf{Preparing References:} \\
 Include your own bib file like this:
 \verb|\bibliographystyle{acl_natbib}|
 \verb|\bibliography{acl2019}| 
@@ -543,7 +543,7 @@ where \verb|acl2019| corresponds to a acl2019.bib file.
 \section{Appendices}
 \label{sec:appendix}
 Appendices are material that can be read, and include lemmas, formulas, proofs, and tables that are not critical to the reading and understanding of the paper. 
-Appendices should be {\bf uploaded as supplementary material} when submitting the paper for review. Upon acceptance, the appendices come after the references, as shown here. Use
+Appendices should be \textbf{uploaded as supplementary material} when submitting the paper for review. Upon acceptance, the appendices come after the references, as shown here. Use
 \verb|\appendix| before any appendix section to switch the section
 numbering over to letters.
 
@@ -553,7 +553,7 @@ numbering over to letters.
 Submissions may include non-readable supplementary material used in the work and described in the paper. Any accompanying software and/or data should include licenses and documentation of research review as appropriate. Supplementary material may report preprocessing decisions, model parameters, and other details necessary for the replication of the experiments reported in the paper. Seemingly small preprocessing decisions can sometimes make a large difference in performance, so it is crucial to record such decisions to precisely characterize state-of-the-art methods. 
 
 Nonetheless, supplementary material should be supplementary (rather
-than central) to the paper. {\bf Submissions that misuse the supplementary 
+than central) to the paper. \textbf{Submissions that misuse the supplementary 
 material may be rejected without review.}
 Supplementary material may include explanations or details
 of proofs or derivations that do not fit into the paper, lists of
